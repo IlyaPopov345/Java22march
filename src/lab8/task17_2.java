@@ -10,21 +10,35 @@ public class task17_2 {
         String[] arr = a.split(" ");
         String x;
 
-        int n = 5;
-        int i = 4;
+        int n = arr.length;
+        int i = arr.length - 1;
 
         x = arr[arr.length - 1];
-        while (i < arr.length - 1) {
-            arr[n] = arr[i];
-            n--;
-            i--;
-        }
-        arr[n] = x;
+
+        n--;
+        i--;
+        arr[n] = arr[i];
+        n--;
+        i--;
+        arr[n] = arr[i];
+        n--;
+        i--;
+        arr[n] = arr[i];
+        n--;
+        i--;
+        arr[n] = arr[i];
+        n--;
+        i--;
+        arr[n] = arr[i];
+
+        arr[i] = x;
 
 
         for (int y = 0; y < arr.length; y++) {
+
             System.out.print(" " + arr[y]);
         }
+
     }
 }
 
