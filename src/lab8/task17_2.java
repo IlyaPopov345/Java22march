@@ -18,9 +18,8 @@ public class task17_2 {
             n--;
             i--;
             arr[n] = arr[i];
-            arr[i] = x;
         }
-
+        arr[i] = x;
         for (int y = 0; y < arr.length; y++) {
 
             System.out.print(" " + arr[y]);
