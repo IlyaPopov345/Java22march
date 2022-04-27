@@ -8,12 +8,12 @@ public class task18 {
         Scanner s = new Scanner(System.in);
         String a = s.nextLine();
         String[] arr = a.split(" ");
-        int b = s.nextInt();
+
+
         String x;
         String z;
         int i = 0;
         String[] mas = new String[i + 1];
-
         x = arr[i];
         arr[i] = arr[arr.length - 1];
         while (i < arr.length - 1) {
@@ -29,8 +29,10 @@ public class task18 {
             z = mas[i];
             mas[i] = x;
             x = z;
+        }
+
         for (int y = 0; y < mas.length; y++) {
             System.out.print(" " + mas[y]);
         }
     }
-}}
+}

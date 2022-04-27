@@ -15,24 +15,26 @@ public class task17_2 {
 
         x = arr[arr.length - 1];
 
+            n--;
+            i--;
+            arr[n] = arr[i];
+            arr[i] = x;
         n--;
         i--;
         arr[n] = arr[i];
-        n--;
-        i--;
-        arr[n] = arr[i];
-        n--;
-        i--;
-        arr[n] = arr[i];
-        n--;
-        i--;
-        arr[n] = arr[i];
-        n--;
-        i--;
-        arr[n] = arr[i];
-
         arr[i] = x;
-
+        n--;
+        i--;
+        arr[n] = arr[i];
+        arr[i] = x;
+        n--;
+        i--;
+        arr[n] = arr[i];
+        arr[i] = x;
+        n--;
+        i--;
+        arr[n] = arr[i];
+        arr[i] = x;
 
         for (int y = 0; y < arr.length; y++) {
 
