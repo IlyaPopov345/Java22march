@@ -6,14 +6,17 @@ public class task1 {
         String str = s.nextLine();
         String[] arr = str.split(" ");
         int m = s.nextInt();
-        int i = 1;
         int[] num = new int[arr.length];
-        while (i < m) {
-            i++;
-            num[i] = Integer.parseInt(arr[m]);
-        }
-        for ( int y = 0; y < arr.length; y++) {
-            System.out.print(" " + num[y]);
+
+        for ( int i = 0; i < num.length  ; i++) {
+
+    num[i] = Integer.parseInt(arr[i]);
+    num[i]=num[i]*m;
+
+}
+
+        for ( int y = 0; y < num.length; y++) {
+            System.out.print(" " +num[y]);
         }
     }
 }
