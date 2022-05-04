@@ -15,7 +15,7 @@ public class task2 {
         String[] right = str2.split(" ");
         int[] num2 = new int[right.length];
 
-         if (left.length< right.length || right.length< left.length ) {
+         if (left.length!= right.length ) {
 
         System.out.print("Размеры массивов должны быть одинаковы");
         return;
