@@ -14,15 +14,22 @@ public class task8 {
         for (int i = 0; i < num.length; i++) {
             num[i] = Integer.parseInt(arr[i]);
         }
-        for (int y = 0; y < arr.length; y++) {
+        for (int y = 0; y < arr.length - 1; y++) {
+            if (num[y + 1] < num[y]) {
+                System.out.println(" Значения отсортированы по возрастанию ");
+                return;
+            }
 
-            if (num[y] <) {
 
-                System.out.println(" Элемент со значением " + num[y] + " на индексе  " + y + " нарушает закономерность ");
+                else if (num[y + 1] < num[y]) {
 
+                    System.out.println(" Элемент со значением " + num[y + 1] + " на индексе  " + (y + 1) + " нарушает закономерность ");
+                    return;
+                }
             }
         }
     }
-}
+
+
 
 
