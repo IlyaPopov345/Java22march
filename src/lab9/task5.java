@@ -18,7 +18,7 @@ public class task5 {
 
         if (fra.length == 0) {
 
-            System.out.print(" Отсутствуют данные о фрагментах ");
+            System.out.print(" Отсутствуют данные о фрагментах "); // разобратся с условиями
             return;
         }
      else if    (num.length == 0) {
