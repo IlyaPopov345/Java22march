@@ -7,24 +7,29 @@ public class task5 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println(" Введите fragments ");
+
         String str = s.nextLine();
+        if ( str.isEmpty()) {
+            System.out.print( " Отсутствуют данные о фрагментах  ");
+            return;
+        }
+
         String[] fra = str.split(" ");
 
         System.out.println(" Введите indexes ");
-        Scanner b = new Scanner(System.in);
-        String str2 = b.nextLine();
+
+        String str2 = s.nextLine();
+
+        if ( str2.isEmpty()) {
+            System.out.print( " Отсутствуют данные о фрагментах  ");
+            return;
+        }
+
         String[] ind = str2.split(" ");
         int[] num = new int[ind.length];
 
-        if (fra.length == 0) {
 
-            System.out.print(" Отсутствуют данные о фрагментах "); // разобратся с условиями
-            return;
-        }
-     else if    (num.length == 0) {
-            System.out.print(" Отсутствуют данные о фрагментах ");
-            return;
-        }
+
         for (int i = 0; i < num.length; i++) {
             num[i] = Integer.parseInt(ind[i]);
         }
