@@ -12,7 +12,7 @@ public class task9 {
         String[] arr = str.split(" ");
         int[] num = new int[arr.length];
         int b = s.nextInt();
-        int sum = 0;
+        int count = 0;
         if (b < 0 || b > arr.length) {
 
             System.out.print(" Число B должно быть в интервале [0, размер массива) ");
@@ -24,12 +24,12 @@ public class task9 {
         for (int i = 0; i < arr.length; i++) {
 
             if (num[i] < num[b]) {
-                sum++;
+                count++;
 
             }
         }
         System.out.println(" На позиции В находится " + num[b]);
-        System.out.println(" Количество меньших " + sum);
+        System.out.println(" Количество меньших " + count);
 
 
     }
