@@ -14,7 +14,10 @@ public class task9 {
 
 
             for (int y = 0; y < arr.length; y++) {
-                System.out.print(" " + arr[y]);
+                while (b < e ){
+                    System.out.print(" " + arr[y]);
+                }
+
 
             }
         }

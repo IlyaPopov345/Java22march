@@ -24,7 +24,7 @@ public class task17 {
             }
             if (max < num[y]) {
                 max = num[y];
-                System.out.println("Промежуточное минимальное " + max);
+                System.out.println("Промежуточное максимальное  " + max);
             }
 
         }
