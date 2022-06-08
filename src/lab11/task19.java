@@ -26,28 +26,30 @@ int x=0;
             System.out.println(" Число Q должно быть в интервале [0, размер массива)");
             return;
         }
-        if (p <= q) {
+        if (p <= q)
+
+        { System.out.print(" Фрагмент массива:" );
             for (int y = p; y < q + 1; y++) {
                 if (min > num[y]) {
                     min = num[y];
                 }
                 System.out.print(" " + num[y] );
-                num[x] = num[y];
+
             }
-            System.out.println(" Фрагмент массива:" +num[x]);
+
         }
 
          else if (p >= q) {
-
+            System.out.print(" Фрагмент массива:" );
             for (int y = q; y < p + 1; y++) {
                 if (min > num[y]) {
                     min = num[y];
                 }
-                System.out.print( " " + num[y]);
+                System.out.print(" " + num[y]);
 
- num[x] = num[y];
+
             }
-            System.out.println(" Фрагмент массива:" +num[x]);
+
         }
         System.out.println();
         System.out.println(" Минимальное среди них: " + min);
