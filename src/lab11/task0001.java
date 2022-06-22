@@ -15,16 +15,14 @@ public class task0001 {
 
 
 
-        try {
             if (b<=0 ) {
                 result = a * Math.sqrt(-7 * b);
                 System.out.println(result);
             }
-        }
+            else {
 
-        catch (IllegalArgumentException v){
-            System.out.print( "Подкоренное выражение должно быть неотрицательно");
-        }
+                System.out.print("Подкоренное выражение должно быть неотрицательно");
+            }
 
     }
 }
