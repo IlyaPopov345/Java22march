@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.lang.NumberFormatException;
+import java.util.NoSuchElementException;
 
 public class task3 {
 
@@ -39,12 +40,11 @@ public class task3 {
                     }
                     count2++;
                 }
-                if (count2 ==  x) {
+                if (count2 == x) {
                     x = ((sum) / count);
                     System.out.println(x);
                     System.out.println("Всего строк:" + count2);
-                }
-               else   {
+                } else {
                     System.out.println("Некорректный объем данных2");
                 }
             } catch (NumberFormatException p) {
@@ -54,7 +54,8 @@ public class task3 {
 
         } catch (FileNotFoundException ex) {
             System.out.print("Файл не найден " + file.getAbsolutePath());
-
+        } catch (NoSuchElementException t) {
+            System.out.print(" Файл пуст ");
         }
     }
 }
