@@ -18,7 +18,7 @@ public class task6 {
             while (s.hasNext()) {
                 String line = s.nextLine();
 
-                System.out.print (line  +",");
+                System.out.print (line  +","); // ne pisat pered pervim zapiatuy
                 }
 
 
